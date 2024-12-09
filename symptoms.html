@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Symptom Selection</title>
+  <link rel="stylesheet" href="symptoms.css">
+</head>
+<body>
+  <div class="symptom-container">
+    <h1>Select Your Symptoms</h1>
+    <p>Choose from the list below or search for your symptoms:</p>
+    <form id="symptom-form">
+      <div class="symptom-group">
+        <h3>General Symptoms</h3>
+        <input type="checkbox" id="fever" name="symptom" value="Fever">
+        <label for="fever">Fever</label>
+        <input type="checkbox" id="fatigue" name="symptom" value="Fatigue">
+        <label for="fatigue">Fatigue</label>
+        <input type="checkbox" id="body-pain" name="symptom" value="Body Pain">
+        <label for="body-pain">Body Pain</label>
+      </div>
+      
+      <div class="symptom-group">
+        <h3>Respiratory Symptoms</h3>
+        <input type="checkbox" id="cough" name="symptom" value="Cough">
+        <label for="cough">Cough</label>
+        <input type="checkbox" id="shortness-of-breath" name="symptom" value="Shortness of Breath">
+        <label for="shortness-of-breath">Shortness of Breath</label>
+        <input type="checkbox" id="sore-throat" name="symptom" value="Sore Throat">
+        <label for="sore-throat">Sore Throat</label>
+      </div>
+      
+      <div class="symptom-group">
+        <h3>Digestive Symptoms</h3>
+        <input type="checkbox" id="nausea" name="symptom" value="Nausea">
+        <label for="nausea">Nausea</label>
+        <input type="checkbox" id="vomiting" name="symptom" value="Vomiting">
+        <label for="vomiting">Vomiting</label>
+        <input type="checkbox" id="diarrhea" name="symptom" value="Diarrhea">
+        <label for="diarrhea">Diarrhea</label>
+      </div>
+      
+      <div class="symptom-group">
+        <h3>Custom Symptom</h3>
+        <input type="text" id="custom-symptom" name="custom-symptom" placeholder="Enter a symptom">
+      </div>
+
+      <button type="submit">Next</button>
+    </form>
+  </div>
+  <script src="symptoms.js"></script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recommendations</title>
+    <link rel="stylesheet" href="recommendations.css">
+</head>
+<body>
+    <div class="recommendation-container">
+        <h1>Your Personalized Recommendations</h1>
+        <div id="output">Loading...</div>
+        <button onclick="goBack()">Back to Symptoms</button>
+    </div>
+    <script>
+        // Fetch and display the recommendations
+        document.addEventListener('DOMContentLoaded', () => {
+            const params = new URLSearchParams(window.location.search);
+            const recommendations = params.get('recommendations');
+
+            if (recommendations) {
+                document.getElementById('output').textContent = decodeURIComponent(recommendations);
+            } else {
+                document.getElementById('output').textContent = 'No recommendations available.';
+            }
+        });
+
+        // Navigate back to the symptoms page
+        function goBack() {
+            window.location.href = 'symptoms.html';
+        }
+    </script>
+</body>
+</html>

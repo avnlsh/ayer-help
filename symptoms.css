@@ -1,0 +1,74 @@
+body {
+    font-family: 'Merriweather', serif;
+    background: url('ayurvedic-background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #3b2f2f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .symptom-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 16px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+    padding: 30px;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 28px;
+    color: #4b3e2e;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 14px;
+    color: #5a4b3e;
+    margin-bottom: 20px;
+  }
+  
+  .symptom-group {
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  label {
+    font-size: 16px;
+    color: #3b2f2f;
+    margin-left: 10px;
+  }
+  
+  input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #d1b89a;
+    border-radius: 8px;
+    background-color: #f9f2e6;
+  }
+  
+  button {
+    background-color: #4b3e2e;
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #6f4f28;
+  }
+  
